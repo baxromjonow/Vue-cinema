@@ -1,0 +1,154 @@
+@media (max-width:1000px) {
+    .intro {
+        height: 600px;
+    }
+
+    .intro__box {
+        height: 600px;
+    }
+}
+
+@media (max-width:800px) {
+    .close{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .intro {
+        height: 500px;
+    }
+
+    .intro__box {
+        align-items: center;
+        height: 500px;
+    }
+
+    .intro__title {
+        font-size: 55px;
+    }
+
+    .intro__text {
+        max-width: 550px;
+        text-align: center;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .nav__list {
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        background-color: var(--dark);
+        padding: 50px;
+        padding-left: 80px;
+        align-items: center;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+
+    #check:checked+.nav__list {
+        transform: translate(0);
+        transition: 0.5s;
+    }
+
+    .close img,
+    .menu img {
+        display: block;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    .nav__link span{
+        margin:  30px 0;
+    }
+    .nav__list{
+        gap: 0;
+    }
+    .header__top{
+        padding: 4px 0;
+    }
+    .header__top__text{
+        font-size: 15px;
+    }
+    .header__top__img{
+        width: 35px;
+        height: 25px;
+    }
+    .intro {
+        height: 400px;
+    }
+
+    .intro__box {
+        height: 400px;
+        gap: 10px;
+    }
+
+    .intro__title {
+        font-size: 35px;
+    }
+
+    .intro__text {
+        font-size: 15px;
+        max-width: 400px;
+        line-height: 20px;
+        text-align: justify;
+        max-width: 300px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .nav__logo img {
+        width: 55px;
+        height: 22px;
+    }
+    .nav__logo span{
+        font-size: 15px;
+    }
+    .menu img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .nav__link span{
+        margin:  15px 0;
+    }
+    .intro__title{
+        font-size: 25px;
+    }
+    .intro__text{
+        -webkit-line-clamp: 4;
+        max-width: 220px;
+        text-align: center;
+    }
+    .btns{
+        gap: 10px;
+    }
+    .btn{
+        padding: 6px 18px;
+    }
+    .intro {
+        height: 300px;
+    }
+
+    .intro__box {
+        height: 300px;
+    }
+}
